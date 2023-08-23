@@ -35,7 +35,7 @@ export class UserController {
             return response.status(200).json(user);
 
         } catch (error) {
-            return response.status(500).json(error.message);
+            return response.status(500).json(error);
         }
     }
 }
