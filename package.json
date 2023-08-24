@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
+    "start": "node src/server.ts",
     "dev": "ts-node-dev --respawn --transpile-only --files src/server.ts",
     "vercel-build": "npx prisma migrate deploy"
   },
