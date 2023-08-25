@@ -9,4 +9,4 @@ app.use(express.json());
 
 app.use(router);
 
-app.listen(process.env.PORT, () => console.log("Server running!"));
+app.listen(process.env.PORT || 8888, () => console.log("Server running!"));
